@@ -63,6 +63,7 @@ services:
       # no MYSQL_USER / MYSQL_PASSWORD here – root is configured only via MYSQL_ROOT_PASSWORD
     volumes:
       - mysql_data:/var/lib/mysql
+      - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
     networks:
       - hostelops-net
 
@@ -107,7 +108,7 @@ services:
       - backend
     networks:
       - hostelops-net
-      
+
 volumes:
   mysql_data:
 
