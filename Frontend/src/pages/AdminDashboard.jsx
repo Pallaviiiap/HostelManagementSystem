@@ -195,9 +195,9 @@ const AdminDashboard = () => {
       <header className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
         <div>
           <h1 className="text-2xl font-semibold tracking-tight text-slate-900">Admin Dashboard</h1>
-          <p className="mt-1 text-sm text-slate-600">
+          {/* <p className="mt-1 text-sm text-slate-600">
             Review, filter, and update complaint statuses in one place.
-          </p>
+          </p> */}
         </div>
         <div className="text-sm text-slate-500">
           Showing <span className="font-semibold text-slate-700">{filteredComplaints.length}</span> of{' '}
