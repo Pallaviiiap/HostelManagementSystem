@@ -1,4 +1,5 @@
 .env
 .env.*
 *.pem
+DEPLOYMENT.md
 node_modules/
